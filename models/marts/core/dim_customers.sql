@@ -1,15 +1,14 @@
+
 with customers as (
 
     select * from {{ ref('stg_customers')}}
 
 ),
-
 orders as (
 
     select * from {{ ref('stg_orders') }}
 
 ),
-
 customer_orders as (
 
     select
