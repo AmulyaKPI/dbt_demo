@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_employee
+    description: filtering data from employee table
+    columns:
+      - name: emp_id
+        description: validating the columns data of employee table
+        tests:
+          - unique 
+          - not_null
+  - name: stg_department
+    description: filtering data from department table
+    columns:
+      - name: dept_id
+        description: validating the columns data of department table
+        tests:
+          - unique 
+          - not_null
+          
+          
+

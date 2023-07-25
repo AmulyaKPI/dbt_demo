@@ -1,0 +1,16 @@
+models:
+  - name: stg_employee
+    columns:
+      - name: emp_id
+        tests:
+          - unique 
+          - not - not_null
+  - name: stg_department
+    columns:
+      - name: dept_id
+        tests:
+          - unique 
+          - not null
+          
+          
+
